@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-section">
+            <h2>Tienda PC </h2>
+            <b>Sumativa:2 <samp>Taller de aplicaciones para interner</samp></b>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product" id="cad_product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn"  onclick="closeBtn()">X</p>
+                <div class="sub-total">
+                    <h3 id="title">Carrito vacio</h3>
+                    <h2>Subtotal: $<strong class="precio-total" id="total">0</strong> </h2>
+                </div>
+                <div class="card-items" id="addProduct">
+
+                </div >
+                <div id="actions"style="display:none;">
+                    <button class="btn-action" type="submit" name="action" id="limpiar_carrito" >vaciar carrito</button>
+                    <button class="btn-action" id="comprar">confirmar compra</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-1.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>Tempest Cataclysm</h3>
+                <p class="title"> Combo 3 En 1 Gaming Teclado</p>
+                <p><span>20</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>           
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-2.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>Newskill Suiko Ivory</h3>
+                <p class="title">Teclado Mecánico Gaming Full RGB</p>
+                <p><span>35</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>           
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-3.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>Aukey KM-G16</h3>
+                <p class="title"> Teclado Mecánico Gaming Retroiluminado</p>
+                <p><span>15.50</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>           
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-4.jpg" alt="" style="width:100%">
+                </div>
+                <h3>Razer Huntsman Elite</h3>
+                <p class="title">Teclado Mecánico Gaming RGB</p>
+                <p><span>20.20</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-5.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>Trust GXT 856 Torac</h3>
+                <p class="title">Teclado Metálico Gaming RGB</p>
+                <p><span>19</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-1.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>MSI Vigor GK30</h3>
+                <p class="title">Teclado Gaming RGB</p>
+                <p><span>45</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div class="img_card">
+                    <img src="./images/products/keyboard-2.jpg" alt="" style="width:100%">
+
+                </div>
+                <h3>Genesis Thor 300 RGB</h3>
+                <p class="title"> Teclado Mecánico Gaming RGB Switch Rojo</p>
+                <p><span>23.99</span>$</p>
+                <input type="number" value="1">
+                <button type="reset" class="btn-info" onclick="location.href='./informacion.html'">Mas Información</button>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./functions.js"></script>
+</body>
+
+</html>
